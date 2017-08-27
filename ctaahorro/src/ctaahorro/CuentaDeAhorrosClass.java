@@ -14,9 +14,17 @@ public class CuentaDeAhorrosClass {
     double rentabilidad=0;
     double retiro;
     double deposito=0;
-    // Constructor con los dos atributos
-    public void CuentaDeAhorrosClass(){
 
+    CuentaDeAhorrosClass(double saldo, double interes) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    // Constructor con los dos atributos
+    public void CuentaDeAhorrosClass(double saldocta, double interescta){
+        saldo = saldocta;
+        interes = interescta;
+        retiro = 0;
+        deposito = 0;
+        rentabilidad=0;
       }
  
 

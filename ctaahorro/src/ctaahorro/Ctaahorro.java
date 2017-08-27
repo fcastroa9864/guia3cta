@@ -35,7 +35,7 @@ public class Ctaahorro {
                
         
         CuentaDeAhorrosClass cuenta;
-        cuenta = new CuentaDeAhorrosClass();
+        cuenta = new CuentaDeAhorrosClass(saldo, interes);
         
         
         
