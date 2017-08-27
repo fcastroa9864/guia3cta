@@ -25,20 +25,17 @@ public class Ctaahorro {
         
         if (tipoint == 2 ){
             interes = 5;
+            saldo = 300000;
         }
         else {
              interes = 4;
+             saldo = 200000;
           }    
               
+               
         
-        DepositoClass deposito;
-        deposito = new DepositoClass();
-        
-        RetiroClass retiro;
-        retiro = new RetiroClass();
-        
-        CuentaDeAhorrosClass extracto;
-        extracto = new CuentaDeAhorrosClass();
+        CuentaDeAhorrosClass cuenta;
+        cuenta = new CuentaDeAhorrosClass();
         
         
         
@@ -47,25 +44,25 @@ public class Ctaahorro {
                     
            if (tipo == 1) { 
                 double valor = Double.parseDouble(JOptionPane.showInputDialog("Ingrese valor"));
-                nuevosaldo = deposito.Depositos(saldo, valor);
+                nuevosaldo = cuenta.Depositos(saldo, nuevosaldo);
                 saldo = nuevosaldo;
                 }
             if (tipo == 2) { 
                 double valor = Double.parseDouble(JOptionPane.showInputDialog("Ingrese valor"));
                 if (valor <= saldo){
-                     nuevosaldo = retiro.Retiros(saldo, valor);
+                     nuevosaldo = cuenta.Retiros(saldo, valor);
                     saldo = nuevosaldo;
                 }
                 else{
                     JOptionPane.showMessageDialog(null,"Saldo insuficiente");
-                }    
+                    }    
                 }
         
                 }
             JOptionPane.showMessageDialog(null,"Saldo: "+nuevosaldo);
-            extracto.CuentaDeAhorrosClass(saldo, interes);
+            cuenta.Extracto(saldo, interes);
             
-            
+           
             
     }
     
