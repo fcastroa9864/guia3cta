@@ -35,8 +35,12 @@ public class Ctaahorro {
                
         
         CuentaDeAhorrosClass cuenta;
-        cuenta = new CuentaDeAhorrosClass(saldo, interes);
+        cuenta = new CuentaDeAhorrosClass();
+        cuenta.CuentaDeAhorrosClass(saldo, interes);
         
+        
+        /* cuenta = new CuentaDeAhorrosClass(saldo, interes);
+         */
         
         
         for(int i=0;i<movimientos;i++) {

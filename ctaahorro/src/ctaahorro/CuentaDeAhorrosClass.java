@@ -9,15 +9,14 @@ package ctaahorro;
  * @author FREDY CASTRO
  */
 public class CuentaDeAhorrosClass {
-    double saldo;
-    double interes;
-    double rentabilidad=0;
-    double retiro;
-    double deposito=0;
+    private double saldo;
+    private double interes;
+    private double rentabilidad=0;
+    private double retiro;
+    private double deposito=0;
 
-    CuentaDeAhorrosClass(double saldo, double interes) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+  
+
     // Constructor con los dos atributos
     public void CuentaDeAhorrosClass(double saldocta, double interescta){
         saldo = saldocta;
